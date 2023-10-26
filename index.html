@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+<!--     <link rel="stylesheet" href="styles.css">
+ -->
+    <style>
+        /* Reset de estilos */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#hero h1 {
+    font-size: 2rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#features {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.feature {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+}
+
+#pricing {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.plan {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="about"><a href="#">Sobre</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#pricing">Preços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Seja Bem-vindo à Nossa Página</h1>
+        <p>Uma descrição cativante do seu serviço ou produto.</p>
+        <a href="#contact" class="cta-button">Entre em Contato</a>
+    </section>
+    
+    <section id="features">
+        <h2>Recursos Principais</h2>
+        <div class="feature">
+            <img src="icon-feature-1.png" alt="Recurso 1">
+            <h3>Recurso 1</h3>
+            <p>Uma descrição do Recurso 1.</p>
+        </div>
+        <div class="feature">
+            <img src="icon-feature-2.png" alt="Recurso 2">
+            <h3>Recurso 2</h3>
+            <p>Uma descrição do Recurso 2.</p>
+        </div>
+        <div class="feature">
+            <img src="icon-feature-3.png" alt="Recurso 3">
+            <h3>Recurso 3</h3>
+            <p>Uma descrição do Recurso 3.</p>
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <h2>Planos e Preços</h2>
+        <div class="plan">
+            <h3>Plano Básico</h3>
+            <p>Descrição do Plano Básico e seus recursos.</p>
+            <span class="price">$19/mês</span>
+        </div>
+        <div class="plan">
+            <h3>Plano Premium</h3>
+            <p>Descrição do Plano Premium e seus recursos.</p>
+            <span class="price">$39/mês</span>
+        </div>
+        <div class="plan">
+            <h3>Plano Empresarial</h3>
+            <p>Descrição do Plano Empresarial e seus recursos.</p>
+            <span class="price">$79/mês</span>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Entre em Contato Conosco</h2>
+        <p>Tire dúvidas, envie-nos uma mensagem ou agende uma demonstração.</p>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("about").addEventListener("click", function() {
+            window.location.href = "/sobre";
+        });
+    </script>
+</body>
+</html>
